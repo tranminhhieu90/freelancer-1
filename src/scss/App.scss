@@ -1,0 +1,16 @@
+@forward './global';
+@forward './flex-grid';
+body {
+  font-family: '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', 'YuGothic', 'ヒラギノ角ゴ ProN W3',
+    'Hiragino Kaku Gothic ProN', 'メイリオ', 'Meiryo', 'verdana', sans-serif;
+}
+.back {
+  margin-top: 2%;
+}
+
+.back-btn {
+  color: white;
+  font-size: 40px;
+  margin-left: 3%;
+  text-decoration: none;
+}

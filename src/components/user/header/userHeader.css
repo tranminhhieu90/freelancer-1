@@ -1,0 +1,222 @@
+
+.top-logo{
+  float: left;
+  margin-top: 10px;
+  width: 300px;
+  height: 61px;;
+}
+
+.top-login{
+  float: left;
+  margin-top: 0.8%;
+  margin-left: 50%;
+}
+
+.top-login-login{
+  font-size: xx-large;
+  color: white;
+  border-left: solid 2px;
+  padding: 10px;
+}
+
+.top-login-signup{
+  font-size: xx-large;
+  color: white;
+  border-left: solid 2px;
+  padding: 10px;
+}
+
+.nav .nav-list li{
+  float: left;
+  list-style: none;
+  margin-left: 150px;
+  font-size: xx-large;
+  color: white;
+  text-align: center;
+}
+
+.nav-list{
+  padding-top: 10px;
+  padding-bottom: 60px;
+  border-top: solid 2px;
+  border-bottom: solid 2px;
+  color: white;
+}
+
+.nav{
+  padding-top: 80px;
+}
+
+.top-menu{
+  color: white;
+  text-decoration: none;
+}
+
+/*メニュー*/
+.menu-btn {
+  float: left;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 70px;
+  justify-content: center;
+  align-items: center;
+  z-index: 900;
+  margin-top: 15px;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 40px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  position: absolute;
+}
+.menu-btn span:before {
+  bottom: 8px;
+}
+.menu-btn span:after {
+  top: 8px;
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+  z-index: 900;
+}
+
+#menu-btn-check:checked ~ .menu-btn span::before {
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 900;
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 900;
+}
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: #3584bb;
+}
+.menu-content ul {
+  padding: 70px 10px 0;
+  width: 400px;
+}
+.menu-content ul li {
+  list-style: none;
+}
+
+.menu-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color:#ffffff;
+  text-decoration: none;
+  padding: 9px 15px 20px 0;
+  position: relative;
+}
+
+.menu-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  right: 11px;
+  top: 16px;
+
+}
+
+.menu-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;/*leftの値を変更してメニューを画面外へ*/
+  z-index: 30;
+  background-color: #2e2e2e;
+  transition: all 0.5s;/*アニメーション設定*/
+}
+#menu-btn-check:checked ~ .menu-content {
+  left: 0;/*メニューを画面内へ*/
+}
+
+.back{
+  margin-top: 2%;
+}
+
+.back-btn{
+  color: white;
+  font-size: 40px;
+  margin-left: 3%;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 800px){
+
+  .back{
+      margin-top: 2%;
+  }
+  
+  .back-btn{
+      color: white;
+      font-size: xx-large;
+      margin-left: 5%;
+  }
+
+  .top-logo{
+      float: left;
+      margin-top: 25px;
+      width: 35%;
+  }
+
+  .top-login{
+      float: left;
+      margin-top: 7%;
+      margin-left: 10%;
+  }
+  
+  .top-login-login{
+      font-size: small;
+      color: white;
+      border-left: solid 2px;
+      padding: 10px;
+  }
+  
+  .top-login-signup{
+      font-size: small;
+      color: white;
+      border-left: solid 2px;
+      padding: 10px;
+  }
+
+  .nav .nav-list li{
+      float: left;
+      list-style: none;
+      margin-left: 35px;
+      font-size: small;
+      color: white;
+      text-align: center;
+  }
+
+  .nav-list{
+      padding-top: 10px;
+      padding-bottom: 35px;
+      border-top: solid 2px;
+      border-bottom: solid 2px;
+      color: white;
+  }
+  
+}
+
